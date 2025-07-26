@@ -669,13 +669,16 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
                 onPressed: (context) {
                   showServerSettings(gFFI.dialogManager);
                 }),
-          if (!isIOS && !_hideNetwork && !_hideProxy)
-            SettingsTile(
-                title: Text(translate('Socks5/Http(s) Proxy')),
-                leading: Icon(Icons.network_ping),
-                onPressed: (context) {
-                  changeSocks5Proxy();
-                }),
+          /*
+// Socks5/Http(s) Proxy 设置项
+if (!isIOS && !_hideNetwork && !_hideProxy)
+  SettingsTile(
+    title: Text(translate('Socks5/Http(s) Proxy')),
+    leading: Icon(Icons.network_ping),
+    onPressed: (context) {
+      changeSocks5Proxy();
+    }),
+*/
           if (!disabledSettings && !_hideNetwork && !_hideWebSocket)
             SettingsTile.switchTile(
               title: Text(translate('Use WebSocket')),
