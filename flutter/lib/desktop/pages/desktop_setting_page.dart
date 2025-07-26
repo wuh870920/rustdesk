@@ -1601,12 +1601,17 @@ class _NetworkState extends State<_Network> with AutomaticKeepAliveClientMixin {
                 ),
               if (!hideServer && (!hideProxy || !hideWebSocket))
                 Divider(height: 1, indent: 16, endIndent: 16),
-              if (!hideProxy)
-                listTile(
-                  icon: Icons.network_ping_outlined,
-                  title: 'Socks5/Http(s) Proxy',
-                  onTap: changeSocks5Proxy,
-                ),
+              /*
+          // 注释掉代理设置界面
+          if (!hideProxy)
+            listTile(
+              icon: Icons.network_ping_outlined,
+              title: 'Socks5/Http(s) Proxy',
+              onTap: changeSocks5Proxy,
+            ),
+          if (!hideProxy && !hideWebSocket)
+            Divider(height: 1, indent: 16, endIndent: 16),
+          */
               if (!hideProxy && !hideWebSocket)
                 Divider(height: 1, indent: 16, endIndent: 16),
               if (!hideWebSocket)
