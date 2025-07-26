@@ -670,7 +670,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
                   showServerSettings(gFFI.dialogManager);
                 }),
           /*
-// Socks5/Http(s) Proxy 设置项
+// Socks5/Http(s) Proxy 设置项 
 if (!isIOS && !_hideNetwork && !_hideProxy)
   SettingsTile(
     title: Text(translate('Socks5/Http(s) Proxy')),
