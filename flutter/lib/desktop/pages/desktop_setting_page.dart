@@ -1602,7 +1602,7 @@ class _NetworkState extends State<_Network> with AutomaticKeepAliveClientMixin {
               if (!hideServer && (!hideProxy || !hideWebSocket))
                 Divider(height: 1, indent: 16, endIndent: 16),
               /*
-          // 注释掉代理设置界面
+          // 注释掉代理设置界面 
           if (!hideProxy)
             listTile(
               icon: Icons.network_ping_outlined,
